@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search</title>
+    <style>
+      #display-movie {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Movie Search</h1>
+
+    <hr />
+
+    <form
+      onsubmit="
+        movieSearch();
+        return false;
+      "
+    >
+      <input
+        type="text"
+        name="movie-title"
+        id="movie-title"
+        placeholder="Search movie..."
+        style="margin-bottom: 15px"
+      />
+      <button type="submit">Search</button>
+    </form>
+    <div id="display-movie"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
